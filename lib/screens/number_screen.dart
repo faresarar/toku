@@ -17,7 +17,7 @@ class NumberScreen extends StatelessWidget {
         backgroundColor: const Color(0xff46322B),
         title: const Text("Numbers"),
       ),
-      body: Column(
+      body: ListView(
         children: [
           Item(number: one,),
           Item(number: one,),
