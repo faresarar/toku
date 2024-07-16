@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-class NumberScreen extends StatefulWidget {
+import '../Models/number.dart';
+
+class NumberScreen extends StatelessWidget {
   const NumberScreen({super.key});
-
-  @override
-  State<NumberScreen> createState() => _NumberScreenState();
-}
-
-class _NumberScreenState extends State<NumberScreen> {
+   final Number one = const Number(
+    image: "assets/images/numbers/number_one.png",
+    jpName: "ichi",
+    enName: "one",
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,29 +20,35 @@ class _NumberScreenState extends State<NumberScreen> {
         color: const Color(0xffEF9235),
         child: Row(
           children: [
-            Container( color :  const Color(0xffFFF6DC),child: Image.asset("assets/images/numbers/number_one.png")),
-             const Padding(
-              padding: EdgeInsets.only(left: 16.0),
+            Container(
+                color: const Color(0xffFFF6DC),
+                child: Image.asset(one.image)),
+             Padding(
+              padding: const EdgeInsets.only(left: 16.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "ichi",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    one.jpName ,
+                    style: const TextStyle(color: Colors.white, fontSize: 18),
                   ),
                   Text(
-                    "one ",
-                    style: TextStyle(color: Colors.white, fontSize: 18),
+                    one.enName,
+                    style: const TextStyle(color: Colors.white, fontSize: 18),
                   ),
-
                 ],
-
               ),
             ),
-             const Spacer(flex: 1,),
-             const Padding(
+            const Spacer(
+              flex: 1,
+            ),
+            const Padding(
               padding: EdgeInsets.only(right: 16.0),
-              child: Icon(Icons.play_arrow , color: Colors.white,size: 24,),
+              child: Icon(
+                Icons.play_arrow,
+                color: Colors.white,
+                size: 24,
+              ),
             )
           ],
         ),
