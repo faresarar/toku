@@ -10,6 +10,6 @@ class NumberScreen extends StatefulWidget {
 class _NumberScreenState extends State<NumberScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold();
   }
 }
