@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../Models/item_model.dart';
 import '../widgets/list_item.dart';
 
-class NumberScreen extends StatelessWidget {
-  const NumberScreen({super.key});
+class PhrasesScreen extends StatelessWidget {
+  const PhrasesScreen({super.key});
   final List<ItemModel> itemModels = const [
     ItemModel(
       sound: 'sounds/ItemModels/ItemModel_one_sound.mp3',
@@ -88,7 +88,7 @@ class NumberScreen extends StatelessWidget {
         body: ListView.builder(
           itemCount: itemModels.length,
           itemBuilder: (BuildContext context, int index) {
-            return ListItem(
+            return PhrasesItem(
               color: const Color(0xffEF9235),
               itemModel: itemModels[index],
             );
