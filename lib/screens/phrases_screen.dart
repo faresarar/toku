@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../Models/item_model.dart';
 import '../widgets/list_item.dart';
+import '../widgets/phrases_item.dart';
 
 class PhrasesScreen extends StatelessWidget {
   const PhrasesScreen({super.key});
