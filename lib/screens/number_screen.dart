@@ -5,66 +5,66 @@ import '../widgets/list_item.dart';
 
 class NumberScreen extends StatelessWidget {
   const NumberScreen({super.key});
-  final List<ItemModel> itemModels = const [
+  final List<ItemModel> numbers = const [
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_one_sound.mp3',
-      image: "assets/images/ItemModels/ItemModel_one.png",
+      sound: 'sounds/numbers/ItemModel_one_sound.mp3',
+      image: "assets/images/numbers/ItemModel_one.png",
       jpName: "ichi",
       enName: "one",
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_two_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_two_sound.mp3',
       jpName: 'Ni',
       enName: 'two',
-      image: 'assets/images/ItemModels/ItemModel_two.png',
+      image: 'assets/images/numbers/ItemModel_two.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_three_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_three_sound.mp3',
       jpName: 'San',
       enName: 'three',
-      image: 'assets/images/ItemModels/ItemModel_three.png',
+      image: 'assets/images/numbers/ItemModel_three.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_four_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_four_sound.mp3',
       jpName: 'Shi',
       enName: 'four',
-      image: 'assets/images/ItemModels/ItemModel_four.png',
+      image: 'assets/images/numbers/ItemModel_four.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_five_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_five_sound.mp3',
       jpName: 'Go',
       enName: 'five',
-      image: 'assets/images/ItemModels/ItemModel_five.png',
+      image: 'assets/images/numbers/ItemModel_five.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_six_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_six_sound.mp3',
       jpName: 'Roku',
       enName: 'six',
-      image: 'assets/images/ItemModels/ItemModel_six.png',
+      image: 'assets/images/numbers/ItemModel_six.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_seven_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_seven_sound.mp3',
       jpName: 'Sebun',
       enName: 'seven',
-      image: 'assets/images/ItemModels/ItemModel_seven.png',
+      image: 'assets/images/numbers/ItemModel_seven.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_eight_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_eight_sound.mp3',
       jpName: 'hachi',
       enName: 'eight',
-      image: 'assets/images/ItemModels/ItemModel_eight.png',
+      image: 'assets/images/numbers/ItemModel_eight.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_nine_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_nine_sound.mp3',
       jpName: 'Kyū',
       enName: 'nine',
-      image: 'assets/images/ItemModels/ItemModel_nine.png',
+      image: 'assets/images/numbers/ItemModel_nine.png',
     ),
     ItemModel(
-      sound: 'sounds/ItemModels/ItemModel_ten_sound.mp3',
+      sound: 'sounds/numbers/ItemModel_ten_sound.mp3',
       jpName: 'Jū',
       enName: 'ten',
-      image: 'assets/images/ItemModels/ItemModel_ten.png',
+      image: 'assets/images/numbers/ItemModel_ten.png',
     ),
   ];
   List<ListItem> getList(List<ItemModel> itemModel) {
@@ -83,14 +83,14 @@ class NumberScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: const Color(0xff46322B),
-          title: const Text("ItemModels"),
+          title: const Text("Numbers "),
         ),
         body: ListView.builder(
-          itemCount: itemModels.length,
+          itemCount: numbers.length,
           itemBuilder: (BuildContext context, int index) {
             return ListItem(
               color: const Color(0xffEF9235),
-              itemModel: itemModels[index],
+              itemModel: numbers[index],
             );
           },
         ));
